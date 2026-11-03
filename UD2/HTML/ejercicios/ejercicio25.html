@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de habitación</title>
+</head>
+
+<body>
+    <form action="reserva.php" method="get">
+        <fieldset>
+            <legend>Datos del solicitante</legend>
+            <label for="solicitante">Nombre del solicitante de la reserva</label>
+            <input type="text“ id=" usuario" name="usuario" maxlength="100" size="80" autofocus />
+            <br>
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="text" id="telefono" name="telefono" placeholder="9 dígitos" maxlength="9" size="9" />
+            <br>
+            <label for="dni">DNI (seleccione un archivo de imagen)</label>
+            <input type="file" accept="image/*" />
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <label for="habitacion">Habitación:</label>
+            <br>
+            <select name="habitacion" size="4">
+                <option value="1" autofocus>Azul</option>
+                <option value="2">Verde</option>
+                <option value="3">Amarilla</option>
+                <option value="4">Morada</option>
+            </select>
+            <br>
+            <label for="ocupacion">Ocupación:</label>
+            <br>
+            <select name="ocupacion" size="2">
+                <option value="1" autofocus>Individual</option>
+                <option value="2">Doble</option>
+            </select>
+            <br>
+            <label for="provincia">Provincia:</label>
+            <br>
+            <select id="provincia" name="provincia" size="7">
+                <optgroup label="Galicia"
+            </select>
+        </fieldset>
+    </form>
+</body>
+
+</html>

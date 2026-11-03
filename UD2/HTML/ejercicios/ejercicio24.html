@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de incidencia</title>
+</head>
+
+<body>
+    <form action="incidencia.php" method="get">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <label for="usuario">Usuario</label>
+            <input type="text“ id=" usuario" name="usuario" placeholder="Nombre y apellidos" size="25" />
+            <br>
+            <input type="radio" name="rol" value="alumno" />Alumno
+            <br>
+            <input type="radio" name="rol" value="profesor" />Profesor
+        </fieldset>
+        <fieldset>
+            <legend>Dónde se produce</legend>
+            <input type="radio" name="lugar" value="departamento" />Todo el departamento
+            <br>
+            <input type="radio" name="lugar" value="aula" />Todo el aula
+            <br>
+            <input type="radio" name="lugar" value="equipo" />Solo en un equipo
+            <br>
+            <label for="lugar">Identifica el dpto, aula o equipo</label>
+            <input type="text" id="lugar" name="lugar" size="15" />
+        </fieldset>
+        <fieldset>
+            <legend>Información sobre la incidencia</legend>
+            <label for="incidencia">Mensaje</label>
+            <br>
+            <textarea name="comentario" rows="8" cols="80" placeholder="Describe el problema con detalle"></textarea>
+            <label for="urgencia">Nivel de urgencia:</label>
+            <br>
+            <input type="radio" name="urgencia" value="alto" />Alto
+            <br>
+            <input type="radio" name="urgencia" value="medio" />Medio
+            <br>
+            <input type="radio" name="urgencia" value="bajo" />Bajo
+            <br>
+            Me gustaría ser avisado por email cuando se resyelva la incidencia<input type="checkbox" name="email"
+                value="on" checked />
+        </fieldset>
+        <input type="submit" value="Entrar">
+        <input type="reset" value="Limpiar">
+
+    </form>
+</body>
+
+</html>
